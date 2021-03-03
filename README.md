@@ -24,6 +24,9 @@ GPU:
 Nvidia GeForce 8600 gt 256mb Marca msi
 
 
+Energia:
+Fuente de poder 400w normal
+
 
 
 
