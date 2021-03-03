@@ -1,0 +1,5 @@
+#!/bin/sh
+. /etc/rc.common
+
+sudo rm -rf /System/Library/Extensions/AppleRTL8169Ethernet.kext
+exit 0

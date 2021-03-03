@@ -1,0 +1,60 @@
+
+Clover EFI installer log - Mon Mar  1 06:47:45 CST 2021
+Installer version: r5107 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacOS                   249.9 GB   disk0s2
+   3:                  Apple_HFS MisCosas                249.7 GB   disk0s3
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk2         119.8 GB   disk1s2
+
+/dev/disk2 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +119.8 GB   disk2
+                                 Physical Store disk1s2
+   1:                APFS Volume MacintoshSSD            28.8 GB    disk2s1
+   2:                APFS Volume Preboot                 20.9 MB    disk2s2
+   3:                APFS Volume Recovery                519.0 MB   disk2s3
+   4:                APFS Volume VM                      1.1 GB     disk2s4
+
+/dev/disk3 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *15.6 GB    disk3
+   1:                  Apple_HFS Install macOS High S... 15.6 GB    disk3s1
+
+/dev/disk4 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *320.1 GB   disk4
+   1:                        EFI EFI                     209.7 MB   disk4s1
+   2:                  Apple_HFS Copias de Seguridad     319.7 GB   disk4s2
+
+======================================================
+Backing up EFI files
+
+Current Active Partition: 1
+
+Stage 0 - Writing boot0af to /dev/rdisk3
+dd if=/dev/rdisk3 count=1 bs=512 of=/tmp/origMBR
+cp /tmp/origMBR /tmp/newMBR
+dd if=/Volumes/Install macOS High Sierra/usr/standalone/i386/boot0af of=/tmp/newMBR bs=440 count=1 conv=notrunc
+fdisk -f /tmp/newMBR -u -y /dev/rdisk3
+
+Stage 1 - Writing boot1h to /dev/rdisk3s1
+File system is HFS.
+dd if=/tmp/boot1h of=/dev/rdisk3s1
+
+Setup Active Partition to be: 1
+New Active Partition: 1
+
+Stage 2 - Written boot6 (x64) to /Volumes/Install macOS High Sierra/boot
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================

@@ -1,0 +1,32 @@
+199:338  1:720  Found BIOS RSDP at fa010
+199:338  0:000  Saving ACPI tables from RSDP fa010 to ACPI\origin ...
+199:338  0:000   fa010: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20 -> RSDP.aml
+199:344  0:005    (Rsdt: cbfb0000)
+199:344  0:000    cbfb0000: 'RSDT', 'RSDT2110', Rev: 1, Len: 64 -> RSDT.aml
+199:348  0:004    Tables in Rsdt: 7
+199:348  0:000    0. cbfb0200: 'FACP', 'OEMFACP', Rev: 1, Len: 132 -> RSDT-FACP.aml
+199:352  0:004        (Dsdt: CBFB0440, Facs: CBFC0000)
+199:352  0:000        cbfb0440: 'DSDT', 'AS153201', Rev: 1, Len: 22224 -> RSDT-DSDT.aml
+199:356  0:004        cbfc0000: 'FACS', Ver: 1, Len: 64 -> RSDT-FACS.aml
+199:360  0:004    1. cbfb0390: 'APIC', 'APIC2110', Rev: 1, Len: 108 -> RSDT-APIC.aml
+199:365  0:004    2. cbfb0400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60 -> RSDT-MCFG.aml
+199:369  0:004    3. cbfc0040: 'OEMB', 'OEMB2110', Rev: 1, Len: 114 -> RSDT-OEMB.aml
+199:373  0:004    4. cbfb5b10: 'AAFT', 'OEMAAFT', Rev: 1, Len: 39 -> RSDT-AAFT.aml
+199:379  0:005    5. cbfb5b40: 'HPET', 'OEMHPET', Rev: 1, Len: 56 -> RSDT-HPET.aml
+199:382  0:003    6. cbfc00c0: 'GSCI', 'GMCHSCI', Rev: 1, Len: 8228 -> RSDT-GSCI.aml
+199:386  0:003  Found UEFI Acpi 2.0 RSDP at cbbe5000
+199:386  0:000  Printing ACPI tables from RSDP cbbe5000 ...
+199:386  0:000   cbbe5000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+199:386  0:000    (Rsdt: cbfb0000)
+199:386  0:000    cbfb0000: 'RSDT', 'RSDT2110', Rev: 1, Len: 64
+199:386  0:000    Tables in Rsdt: 7
+199:386  0:000    0. cbfb0200: 'FACP', 'OEMFACP', Rev: 1, Len: 132
+199:386  0:000        (Dsdt: CBFB0440, Facs: CBFC0000)
+199:386  0:000        cbfb0440: 'DSDT', 'AS153201', Rev: 1, Len: 22224
+199:387  0:000        cbfc0000: 'FACS', Ver: 1, Len: 64
+199:387  0:000    1. cbfb0390: 'APIC', 'APIC2110', Rev: 1, Len: 108
+199:387  0:000    2. cbfb0400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60
+199:387  0:000    3. cbfc0040: 'OEMB', 'OEMB2110', Rev: 1, Len: 114
+199:387  0:000    4. cbfb5b10: 'AAFT', 'OEMAAFT', Rev: 1, Len: 39
+199:387  0:000    5. cbfb5b40: 'HPET', 'OEMHPET', Rev: 1, Len: 56
+199:387  0:000    6. cbfc00c0: 'GSCI', 'GMCHSCI', Rev: 1, Len: 8228

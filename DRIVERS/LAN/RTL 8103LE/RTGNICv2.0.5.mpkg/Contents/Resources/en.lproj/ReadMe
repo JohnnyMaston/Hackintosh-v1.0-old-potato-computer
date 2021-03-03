@@ -1,0 +1,15 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf250
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww12040\viewh10300\viewkind0
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\f0\fs24 \cf0     This is the Mac OS X 10.6 driver for Realtek 8169S(SB)/8168(B/C/CP/D/E)/8101E/8102E/8103E/8105E. The system will be rebooted after the driver is installed, so please close all the other applications before installing the driver. After the system is rebooted, please follow the following steps to configure the network:\
+1. Select the "System Preference" from the system menu.\
+2. Select and launch the "Network" item in the "System Preference" folder.\
+3. From the "Configure" list, select the adapter to be configured.\
+4. Configure the settings.\
+5. Click the "Save" button.\
+Then you can connect to the Ethernet.......\
+\
+NOTE: This driver is for Mac OS X 10.6 on the Intel-based Mac. }
