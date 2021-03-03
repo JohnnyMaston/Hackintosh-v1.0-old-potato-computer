@@ -4,6 +4,11 @@ Contrui un Hackintosh con una computadora vieja, Asrock G31m-s V2.0.
 
 
 
+
+
+
+
+
 Componentes:
 
 Tarjeta madre:
@@ -17,6 +22,12 @@ Intel core 2 Quad 9500 2.8ghz
 
 GPU:
 Nvidia GeForce 8600 gt 256mb Marca msi
+
+
+
+
+
+
 
 ![Captura de pantalla 2021-03-02 a la(s) 9 22 01 p  m](https://user-images.githubusercontent.com/11879391/109748041-c9c2c980-7b9d-11eb-8bb7-0daf0d83bc21.png)
 ![Captura de pantalla 2021-03-02 a la(s) 9 22 14 p  m](https://user-images.githubusercontent.com/11879391/109748053-cdeee700-7b9d-11eb-9f59-0b301845ac9f.png)
